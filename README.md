@@ -3,7 +3,7 @@
 
 A dark UI theme with the ability `adapt` to most syntax themes.
 
-![Vertex UI]()
+![Vertex UI - screenshot]()
 
 
 
