@@ -2,22 +2,22 @@ root = document.documentElement
 
 module.exports =
   activate: (state) ->
-    atom.config.observe 'apex-adapt-dark-slim-ui.fontSize', (value) ->
+    atom.config.observe 'vertex-ui.fontSize', (value) ->
       setFontSize(value)
 
-    atom.config.observe 'apex-adapt-dark-slim-ui.tabSizing', (value) ->
+    atom.config.observe 'vertex-ui.tabSizing', (value) ->
       setTabSizing(value)
 
-    atom.config.observe 'apex-adapt-dark-slim-ui.hideDockButtons', (value) ->
+    atom.config.observe 'vertex-ui.hideDockButtons', (value) ->
       setHideDockButtons(value)
 
-    atom.config.observe 'apex-adapt-dark-slim-ui.autoHideStatus', (value) ->
+    atom.config.observe 'vertex-ui.autoHideStatus', (value) ->
       setAutoHideStatus(value)
 
     # DEPRECATED: This can be removed at some point (added in Atom 1.17/1.18ish)
     # It removes `layoutMode`
-    if atom.config.get('apex-adapt-dark-slim-ui.layoutMode')
-      atom.config.unset('apex-adapt-dark-slim-ui.layoutMode')
+    if atom.config.get('vertex-ui.layoutMode')
+      atom.config.unset('vertex-ui.layoutMode')
 
   deactivate: ->
     unsetFontSize()
@@ -41,29 +41,29 @@ unsetFontSize = ->
 # Tab Sizing -----------------------
 
 setTabSizing = (tabSizing) ->
-  root.setAttribute('theme-apex-adapt-dark-slim-ui-tabsizing', tabSizing.toLowerCase())
+  root.setAttribute('vertex-ui-tabsizing', tabSizing.toLowerCase())
 
 unsetTabSizing = ->
-  root.removeAttribute('theme-apex-adapt-dark-slim-ui-tabsizing')
+  root.removeAttribute('vertex-ui-tabsizing')
 
 
 # Dock Buttons -----------------------
 
 setHideDockButtons = (hideDockButtons) ->
   if hideDockButtons
-    root.setAttribute('theme-apex-adapt-dark-slim-ui-dock-buttons', 'hidden')
+    root.setAttribute('vertex-ui-dock-buttons', 'hidden')
   else
     unsetHideDockButtons()
 
 unsetHideDockButtons = ->
-  root.removeAttribute('theme-apex-adapt-dark-slim-ui-dock-buttons')
+  root.removeAttribute('vertex-ui-dock-buttons')
 
 # Auto Hide Status -------------------
 setAutoHideStatus = (autoHideStatus) ->
   if autoHideStatus
-    root.setAttribute('theme-apex-adapt-dark-slim-ui-auto-hide-status', true)
+    root.setAttribute('vertex-ui-auto-hide-status', true)
   else
     unsetAutoHideStatus()
 
 unsetAutoHideStatus = ->
-  root.removeAttribute('theme-apex-adapt-dark-slim-ui-auto-hide-status')
+  root.removeAttribute('vertex-ui-auto-hide-status')

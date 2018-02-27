@@ -9,7 +9,7 @@ A dark UI theme with the ability `adapt` to most syntax themes.
 
 ### Install
 
-Install this theme using __Settings > Install__. Select the "Themes" toggle and search for "vertex-ui". From there, go to __Settings > Themes__ section and selecting "Apex Adapt Dark" from the __UI Themes__ drop-down menu.
+Install this theme using __Settings > Install__. Select the "Themes" toggle and search for "vertex-ui". From there, go to __Settings > Themes__ section and selecting "Vertex" from the __UI Themes__ drop-down menu.
 
 
 
@@ -29,7 +29,7 @@ To make changes, go to `Settings > Themes > Vertex UI > Settings` or the cog ico
 It's also possible to resize only certain areas by adding the following to your `styles.less` (Use DevTools to find the right selectors):
 
 ```css
-.theme-apex-adapt-dark-slim-ui {
+.vertex-ui {
   .tab-bar { font-size: 18px; }
   .tree-view { font-size: 14px; }
   .status-bar { font-size: 12px; }

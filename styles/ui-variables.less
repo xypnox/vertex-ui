@@ -12,9 +12,9 @@
 
 // Text -----------------
 @text-color:            @ui-fg;
-@text-color-subtle:     fadeout(@text-color, 40%);
+@text-color-subtle:     darken(@text-color, 30%);
 @text-color-highlight:  lighten(@text-color, 20%);
-@text-color-selected:   white;
+@text-color-selected:   lighten(@text-color, 50%);
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
@@ -31,7 +31,7 @@
 @background-color-highlight: lighten(@base-background-color, 4%);
 @background-color-selected:  lighten(@base-background-color, 8%);
 
-@app-background-color: @level-3-color;
+@app-background-color: @ui-syntax-color;
 
 
 // Base -----------------
@@ -50,7 +50,7 @@
 @tool-panel-border-color:          @base-border-color;
 
 @inset-panel-background-color:     lighten(@level-2-color, 4%);
-@inset-panel-border-color:         fadeout(@base-border-color, 15%);
+@inset-panel-border-color:         @base-border-color;
 
 @panel-heading-background-color:   @level-2-color;
 @panel-heading-border-color:       @base-border-color;
@@ -80,7 +80,7 @@
 
 
 // Sizes -----------------
-@font-size:               12px;
+@font-size:               13px;
 @input-font-size:         14px;
 @disclosure-arrow-size:   12px;
 
@@ -90,7 +90,7 @@
 @component-line-height:   25px;
 @component-border-radius: 3px;
 
-@tab-height:              30px;
+@tab-height:              3em;
 
 
 // Font -----------------

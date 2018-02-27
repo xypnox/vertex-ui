@@ -4,7 +4,6 @@
 
 @import "syntax-variables";
 
-.ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); } .ui-syntax-color(); // fallback color
 @ui-syntax-color: @syntax-background-color;
 
 // Color guards -----------------
@@ -12,31 +11,32 @@
 @ui-s-s: saturation(@ui-syntax-color);
 @ui-s-l: lightness(@ui-syntax-color);
 @ui-inv: 10%; // inverse lightness if below
-
-.ui-hue() when (@ui-s-s = 0) { @ui-hue: 220; } // Use blue hue when no saturation
-.ui-hue() when (@ui-s-s > 0) { @ui-hue: @ui-s-h; }
-.ui-hue();
-
-.ui-saturation() when (@ui-s-h <=  80) { @ui-saturation: min(@ui-s-s,  5%); } // minimize saturation for brown
-.ui-saturation() when (@ui-s-h >   80) and (@ui-s-h <  160) { @ui-saturation: min(@ui-s-s, 12%); } // reduce saturation for green
-.ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l <  @ui-inv) { @ui-saturation: min(@ui-s-s, 48%); } // limit max saturation for very dark backgrounds
-.ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l >= @ui-inv) { @ui-saturation: @ui-s-s; }
-.ui-saturation();
-
+//
+// .ui-hue() when (@ui-s-s = 0) { @ui-hue: 220; } // Use blue hue when no saturation
+// .ui-hue() when (@ui-s-s > 0) { @ui-hue: @ui-s-h; }
+// .ui-hue();
+@ui-hue: @ui-s-h;
+// .ui-saturation() when (@ui-s-h <=  80) { @ui-saturation: min(@ui-s-s,  5%); } // minimize saturation for brown
+// .ui-saturation() when (@ui-s-h >   80) and (@ui-s-h <  160) { @ui-saturation: min(@ui-s-s, 12%); } // reduce saturation for green
+// .ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l <  @ui-inv) { @ui-saturation: min(@ui-s-s, 48%); } // limit max saturation for very dark backgrounds
+// .ui-saturation() when (@ui-s-h >= 160) and (@ui-s-l >= @ui-inv) { @ui-saturation: @ui-s-s; }
+// .ui-saturation();
+//
 .ui-lightness() when (@ui-s-l <  @ui-inv) {
   @ui-lightness: @ui-s-l + 8%; // increase lightness when too dark
-  @ui-lightness-border: @ui-lightness*.3;
+  @ui-lightness-border: @ui-lightness;
 }
 .ui-lightness() when (@ui-s-l >= @ui-inv) {
   @ui-lightness: min(@ui-s-l, 20%); // limit max lightness (for light syntax themes)
-  @ui-lightness-border: @ui-lightness*.6;
+  @ui-lightness-border: @ui-lightness;
 }
 .ui-lightness();
 
 // Main colors -----------------
-@ui-fg:     hsl(@ui-hue, min(@ui-saturation, 18%), max(@ui-lightness*3, 66%) );
-@ui-bg:     hsl(@ui-hue, @ui-saturation, @ui-lightness); // normalized @syntax-background-color
-@ui-border: hsl(@ui-hue, @ui-saturation, @ui-lightness-border);
+@ui-fg:         lighten(@syntax-background-color, 50%);
+@ui-fg-faded:   lighten(@syntax-background-color, 30%);
+@ui-bg:         @ui-syntax-color;
+@ui-border:     @ui-bg;
 
 
 
@@ -58,9 +58,9 @@
 
 
 // Background (Custom) -----------------
-@level-1-color: lighten(@base-background-color, 6%);
+@level-1-color: lighten(@base-background-color, 10%);
 @level-2-color: @base-background-color;
-@level-3-color: darken(@base-background-color, 8%);
+@level-3-color: @base-background-color;
 
 @level-3-color-hover:  lighten(@level-3-color, 6%);
 @level-3-color-active: lighten(@level-3-color, 3%);
@@ -108,7 +108,7 @@
 @tab-text-color-editor:             contrast(@ui-syntax-color, darken(@ui-syntax-color, 50%), @text-color-highlight );
 @tab-background-color-editor:       @ui-syntax-color;
 
-@tree-view-background-selected-color: lighten(@level-3-color, 5%);
+@tree-view-background-selected-color: lighten(@level-3-color, 3%);
 
 @tooltip-background-color:          @accent-bg-color;
 @tooltip-text-color:                @accent-bg-text-color;
@@ -118,13 +118,13 @@
 
 // Sizes (Custom) -----------------
 
-@ui-size:                 1.2em;
+@ui-size:                 1em;
 @ui-input-size:           @ui-size*1.15;
 @ui-padding:              @ui-size*1.5;
 @ui-padding-pane:         @ui-size*.5;
 @ui-padding-icon:         @ui-padding/3.3;
 @ui-line-height:          @ui-size*1.75;
-@ui-tab-height:           @ui-size*2.5;
+@ui-tab-height:           @ui-size*3;
 
 
 

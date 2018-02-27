@@ -2,7 +2,7 @@
   "name": "vertex-ui",
   "theme": "ui",
   "version": "0.0.1",
-  "description": "Vertex UI, ported to a fork of the One Dark UI theme",
+  "description": "Vertex UI - a sleek ui for dark syntax themes",
   "keywords": [
     "dark",
     "adaptive",

@@ -42,7 +42,7 @@
     border-top: @tab-border;
     max-width: 130px;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 12px;
     transition: all 150ms ease-out;
 
     &.active {
@@ -51,7 +51,7 @@
       flex: 1;
       color: @text-color-selected;
       border-top: 0;
-      font-weight: bold;
+      // font-weight: bold;
 
       .title {
           padding: 0;
@@ -89,7 +89,7 @@
       top: @icon-padding-top;
       right: @icon-padding-right;
       z-index: 2;
-      font-size: 1em;
+      font-size: 1.1em;
       width: 1.5em;
       height: 1.5em;
       line-height: 1.5;
@@ -97,7 +97,7 @@
       background-color: inherit;
       overflow: hidden;
       transform: scale(0);
-      transition: transform .08s;
+      transition: transform .3s;
       &:hover {
         color: @accent-text-color;
         background-color: @accent-color;
@@ -118,7 +118,7 @@
     }
     &:hover .close-icon {
       transform: scale(1);
-      transition-duration: .16s;
+      transition-duration: .3s;
     }
 
   // Modified icon ----------------------
