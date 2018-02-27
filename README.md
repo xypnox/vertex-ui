@@ -3,7 +3,7 @@
 
 A dark UI theme with the ability `adapt` to most syntax themes.
 
-![Vertex UI - screenshot]()
+![Vertex UI - screenshot](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshot.png)
 
 
 
