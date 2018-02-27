@@ -1,15 +1,15 @@
 {
-  "name": "apex-adapt-dark-slim-ui",
+  "name": "vertex-ui",
   "theme": "ui",
-  "version": "0.4.2",
-  "description": "Apex Adapt Dark Slim UI, ported to a fork of the One Dark UI theme",
+  "version": "0.0.1",
+  "description": "Vertex UI, ported to a fork of the One Dark UI theme",
   "keywords": [
     "dark",
     "adaptive",
     "ui"
   ],
   "license": "MIT",
-  "repository": "https://github.com/swivelgames/apex-adapt-dark-slim-ui",
+  "repository": "https://github.com/xypnox/vertex-ui",
   "main": "lib/main",
   "engines": {
     "atom": ">0.40.0"

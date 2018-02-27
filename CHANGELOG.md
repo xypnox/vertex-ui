@@ -1,1 +1,1 @@
-See https://github.com/swivelgames/apex-adapt-dark-slim-ui/releases
+See https://github.com/xypnox/vertex-ui/releases
