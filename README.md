@@ -1,9 +1,10 @@
 ## Vertex UI theme
 
+![LOGOs](https://raw.githubusercontent.com/xypnox/vertex-ui/master/vertex.png)
 
 A dark UI theme with the ability `adapt` to most syntax themes.
 
-![Vertex UI - screenshot](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshot.png)
+![Vertex UI - screenshot](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/v0.8.png)
 
 
 
