@@ -17,9 +17,7 @@ Install this theme using __Settings > Install__. Select the "Themes" toggle and 
 
 In the theme settings you can:
 
-- Change the __Font Size__ to scale the whole UI up or down.
-- Choose between 3 __Tab Sizing__ modes.
-- Hide the  __dock buttons__.
+- Autohide the status bar.
 
 To make changes, go to `Settings > Themes > Vertex UI > Settings` or the cog icon next to the theme picker.
 
@@ -41,3 +39,11 @@ It's also possible to resize only certain areas by adding the following to your 
 
 __Why do the colors change when I switch Syntax themes?__
 This UI theme uses the same background color as the chosen syntax theme. If that syntax theme has a light background color, it only uses its hue, but otherwise stays dark. This lets you use dark-light combos.
+
+
+## Thanks
+
+- [Apex Adapt Dark Slim UI theme](https://atom.io/themes/apex-adapt-dark-slim-ui)
+- [Apex Adapt Dark UI theme](https://atom.io/themes/apex-adapt-dark-ui)
+- [Apex UI](https://atom.io/themes/apex-ui)
+- [One Dark UI](https://atom.io/themes/one-dark-ui)

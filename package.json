@@ -18,37 +18,6 @@
     "coffeelint": "^1.9.7"
   },
   "configSchema": {
-    "fontSize": {
-      "title": "Font Size",
-      "description": "Change the UI font size. Needs to be between 8 and 20. In Auto mode, the Font Size will automatically change based on the window size.",
-      "type": [
-        "integer",
-        "string"
-      ],
-      "minimum": 8,
-      "maximum": 20,
-      "default": "Auto",
-      "order": 1
-    },
-    "tabSizing": {
-      "title": "Tab Sizing",
-      "description": "In Even mode all tabs will be the same size. Great for quickly closing many tabs. In Maximum mode the tabs will expand to take up the full width. In Minimum mode the tabs will only take as little space as needed and also show longer file names.",
-      "type": "string",
-      "default": "Even",
-      "enum": [
-        "Even",
-        "Maximum",
-        "Minimum"
-      ],
-      "order": 2
-    },
-    "hideDockButtons": {
-      "title": "Hide dock toggle buttons",
-      "description": "Note: When hiding the toggle buttons, opening a dock needs to be done by using the keyboard or other alternatives.",
-      "type": "boolean",
-      "default": "false",
-      "order": 3
-    },
     "autoHideStatus": {
       "title": "Auto-hide status bar",
       "description": "Hides status bar when not hovering (feature requested by @alanzanattadev)",

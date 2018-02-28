@@ -45,6 +45,10 @@
     font-size: 12px;
     transition: all 150ms ease-out;
 
+    &:hover {
+        color: lighten(@tab-text-color, 20%);
+    }
+
     &.active {
       box-shadow: none;
 
@@ -97,10 +101,10 @@
       background-color: inherit;
       overflow: hidden;
       transform: scale(0);
-      transition: transform .3s;
+      transition: transform .3s ease-in;
       &:hover {
-        color: @accent-text-color;
-        background-color: @accent-color;
+        color: @accent-color;
+        // background-color: @accent-color;
       }
       &:active {
         background-color: fade(@accent-color, 50%);
@@ -236,7 +240,7 @@ atom-pane .tab:before {
   width: 0;
   height: 1px;
   background: @accent-color;
-  transition: all 100ms ease-in-out;
+  transition: all 300ms ease-in;
 }
 atom-pane .tab.active:before {
   right: 0;
