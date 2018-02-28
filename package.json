@@ -18,6 +18,18 @@
     "coffeelint": "^1.9.7"
   },
   "configSchema": {
+    "tabSizing": {
+     "title": "Tab Sizing",
+     "description": "In Even mode all tabs will be the same size. Great for quickly closing many tabs. In Maximum mode the tabs will expand to take up the full width. In Minimum mode the tabs will only take as little space as needed and also show longer file names.",
+     "type": "string",
+     "default": "Even",
+     "enum": [
+       "Even",
+       "Maximum",
+       "Minimum"
+     ],
+     "order": 2
+    },
     "autoHideStatus": {
       "title": "Auto-hide status bar",
       "description": "Hides status bar when not hovering (feature requested by @alanzanattadev)",
