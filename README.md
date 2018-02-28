@@ -6,7 +6,27 @@ A dark UI theme with the ability `adapt` to most syntax themes.
 
 ![Vertex UI - screenshot](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/v0.8.png)
 
+_Syntax Theme: Northem Atom Dark_
 
+## Matches well with several syntax themes
+
+### Dracula
+![dracula](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/dracula.png)
+
+### Seti
+![seti](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/seti.png)
+
+### Monokai Seti
+![monokai-seti](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/monokai-seti.png)
+
+### One Dark
+![one-dark](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/one-dark.png)
+
+### An old hope
+![an-old-hope](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/an-old-hope.png)
+
+### Solarized Dark
+![solarized-dark](https://raw.githubusercontent.com/xypnox/vertex-ui/master/screenshots/solarized-dark.png)
 
 ### Install
 
